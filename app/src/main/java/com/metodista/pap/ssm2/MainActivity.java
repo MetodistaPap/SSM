@@ -1,4 +1,4 @@
-package com.metodista.pap.ssm;
+package com.metodista.pap.ssm2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
