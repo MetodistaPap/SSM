@@ -1,7 +1,9 @@
-package com.metodista.pap.ssm2;
+package com.metodista.pap.ssm;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.metodista.pap.ssm.R;
 
 public class MainActivity extends AppCompatActivity {
 

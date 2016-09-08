@@ -7,18 +7,30 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.metodista.pap.ssm2.MainActivity">
+    android:background="@color/white"
+    tools:context="com.metodista.pap.ssm.MainActivity">
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/texto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="28dp"
         android:gravity="center_horizontal"
         android:text="Informe seus dados"
         android:textSize="25sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true" />
+        android:textColor="#897b00"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -27,6 +39,7 @@
         android:layout_marginTop="29dp"
         android:layout_below="@+id/texto"
         android:layout_centerHorizontal="true"
+        android:textColorHint="#73897b00"
         android:hint="Login"
         android:layout_gravity="center" />
 
@@ -36,16 +49,18 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/senha"
-        android:layout_below="@+id/login"
         android:hint="Senha"
-        android:layout_marginTop="31dp" />
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/login"
+        android:layout_alignParentLeft="true"
+        android:textColorHint="#73897b00"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enviar"
         android:id="@+id/loginBtn"
-        android:layout_marginTop="26dp"
         android:layout_below="@+id/senha"
         android:layout_centerHorizontal="true" />
 
@@ -54,8 +69,9 @@
         android:layout_height="wrap_content"
         android:text="Criar uma nova conta"
         android:id="@+id/loginCreatePlayer"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:layout_below="@+id/loginBtn"
+        android:textColor="#005b89"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -65,12 +81,6 @@
         android:id="@+id/forgetPass"
         android:layout_marginTop="13dp"
         android:layout_below="@+id/loginCreatePlayer"
+        android:textColor="#005b89"
         android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_alignTop="@+id/texto"
-        android:layout_alignParentLeft="true" />
 </RelativeLayout>
