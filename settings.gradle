@@ -1,1 +1,1 @@
-include ':ssm2'
+include ':ssm2', ':app'
